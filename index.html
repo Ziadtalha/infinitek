@@ -374,7 +374,7 @@ body {
     top: 0;
     display: inline-flex;
     z-index: 50;
-    position: sticky;
+    border-bottom: rgb(109, 109, 109) solid 1px;
 }
 
 .topbar .ul {
@@ -406,7 +406,7 @@ body {
 
 
 
-@media (min-width: 751px) { 
+@media (min-width: 771px) { 
     .search form{
       display: inline-block;
       height: 35px;
@@ -415,9 +415,14 @@ body {
       text-align: left;
     }
 
+    .topbar {
+
+        position: sticky;
+    }
+
 }
 
-@media (max-width: 750px) {
+@media (max-width: 770px) {
 
 
 
@@ -427,6 +432,7 @@ body {
         position: absolute;
         top: 55px;
         text-align: center;
+        left: 2%;
     }
     
     #sbo {
@@ -515,7 +521,34 @@ body {
     .search form {
         text-align: left;
     }
+
+
 }
+
+@media (max-width: 950px) {
+
+    .topbar .ul {
+        transition: 0.3s;
+        display: none;
+         }
+
+    .search  .text {
+        border: none;
+        background: none;
+        outline: none;
+        padding: 0;
+        color: #fff;
+        font-size: 20px;
+        transition: 0.6s;
+        line-height: 40px;
+        text-align: center;
+        }
+    }
+   
+
+
+
+
 
 
 @media (max-width: 1065px) {
@@ -557,14 +590,7 @@ body {
 
     }
 
-    .topbar .ul {
-        transition: 0.3s;
-        display: block;
-        width: 350;
-        padding: 0;
-        margin-top: -55px;
-        display: none;
-    }
+   
 
     .topbar .ul a {
         font-size: 10px;
@@ -769,6 +795,7 @@ header {
     margin-top: -5px;
     border-top: none;
     border-left: none;
+    
 }
 
 header h1 {
