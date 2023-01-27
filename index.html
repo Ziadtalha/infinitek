@@ -413,6 +413,7 @@ body {
       position: absolute;
       width: 400px;
       text-align: left;
+      z-index: 60;
     }
 
     .topbar {
@@ -450,6 +451,8 @@ body {
             width: 95%;
            
         }
+
+        .scm 
         
         
     #sbu {
@@ -535,6 +538,12 @@ body {
         display: none;
          }
 
+         .scm {
+
+            z-index: 55;
+
+         }
+
     .search  .text {
         border: none;
         background: none;
@@ -548,8 +557,6 @@ body {
         }
     }
    
-
-
 
 
 
@@ -721,9 +728,8 @@ body {
 }
 
 
-.search {
-    display: inline-block;
-
+.search form .text{
+    text-align: center;
 
 }
 
@@ -736,11 +742,11 @@ body {
     /* top: 5px; */
     bottom: 10px;
     background: #2f3640;
-    justify-content: center;
     align-items: center;
     color: #0099ff;
     margin-top: 5px;
     cursor: pointer;
+    display: none;
 
 }
 
@@ -758,7 +764,6 @@ body {
     height: 37px;
     position: relative;
     /* top: 5px; */
-    bottom: 10px;
     background: #2f3640;
     /* margin-top: 5px; */
 
